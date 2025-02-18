@@ -40,3 +40,16 @@
     list-style-type: none;
     cursor: pointer;
 } 
+@media screen and (max-width: 768px) { 
+    .header_left ul li, 
+    .header_right ul li {
+        display: none;  /* Hide items on smaller screens */
+    }
+}
+
+/* Optional: Show only the Netflix logo on small screens */
+@media screen and (max-width: 768px) { 
+    .header_left ul li:first-child {
+        display: block; /* Keep the logo visible */
+    }
+}
